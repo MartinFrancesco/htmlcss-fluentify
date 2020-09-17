@@ -1,0 +1,84 @@
+/* GENERAL STYLE */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #808080;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+/* UTILITIES */
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+/* Buttons */
+.btn {
+  width: 100px;
+  padding: 15px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.btn-colored {
+  border: none;
+  background-color: green;
+}
+
+/* Tipography */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* MAIN CONTENT */
+/* Header */
+.header-nav {
+  line-height: 80px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #0c325a;
+}
+nav ul li {
+  padding: 0 8px;
+  display: inline-block;
+}
+
+.navbar-left, .navbar-right {
+  width: 45%;
+}
+
+.logo {
+  width: 10%;
+}
+
+.logo img {
+  vertical-align: middle;
+}
