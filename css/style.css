@@ -15,8 +15,8 @@ a {
   color: #fff;
 }
 
-a:hover {
-  text-decoration: underline;
+a:hover, a:focus {
+  text-decoration: none;
   color: orange;
 }
 
@@ -35,6 +35,10 @@ a:hover {
 
 .float-left {
   float: left;
+}
+
+.float-right {
+  float: right;
 }
 
 .col-3 {
@@ -57,7 +61,7 @@ a:hover {
 
 .btn-colored {
   border: none;
-  background-color: green;
+  background-color: #7cbb02;
 }
 
 .btn-large {
@@ -65,7 +69,15 @@ a:hover {
   padding: 15px 20px;
   border-radius: 5px;
   border: none;
-  background-color: green;
+  background-color: #7cbb02;
+}
+
+.btn:hover, .btn-colored:hover, .btn-large:hover {
+  color: black;
+}
+
+.btn:active, .btn-colored:active, .btn-large:active {
+  background-color: orange;
 }
 
 /* Tipography */
@@ -165,4 +177,39 @@ nav ul li {
   height: 1px;
   margin: 20px auto;
   background-color: black;
+}
+
+/* FOOTER */
+footer {
+  height: 130px;
+  background-color: #d3d3d3;
+}
+
+.bottom-left h2 {
+  line-height: 100px;
+  margin-bottom: 0;
+}
+
+.bottom-right {
+  line-height: 100px;
+  text-align: right;
+}
+
+.bottom-right>span {
+  margin-left: 40px;
+}
+
+/* lable help! */
+.help {
+  position: fixed;
+  bottom: 0;
+  right: 13%;
+}
+
+.help a {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  background-color: #7cbb02;
 }
